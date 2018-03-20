@@ -1,350 +1,438 @@
 <!DOCTYPE html>
 <html lang="ka">
 <head>
-	<meta charset="UTF-8">
-	<title>ქართველი მხატვრები</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/reset.css">
-	<link rel="stylesheet" href="styles/owl.carousel.css">
-	<link rel="stylesheet" href="styles/owl.theme.default.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  <link rel="stylesheet" href="styles/animate.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+  <link rel="shortcut icon" type="image/png" href="img/paint.png"/>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- [if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script> 
+  <![endif] -->
 </head>
 <body>
-    
-    <div class="menu_bar">
-       
-        <div class="menu-item-box" id="burger">
-            <span class="menu-item"></span>
-            <span class="menu-item"></span>
-        </div> <!-- menu-item-box -->
+
+  <header>
+    <div class="container">
+      <div class="clear-container">
+
+          <a href="index.html" id="logo">AC Gallery</a>
+          <nav class="nav1200">
+
+            <button onclick="myFunction()" class="dropbtn" id="round_btn">
+              <span class="menu-item"></span>
+              <span class="menu-item"></span>
+              <span class="menu-item"></span>
+            </button>
+
+             <div id="mySidenav" class="sidenav">
+                <a href="#home" class="scroll">მთავარი</a>  
+                <a href="gallery.html">გალერეა</a>              
+                <a href="#crafts" class="scroll">ნამუშევრები</a>
+                <a href="#authors" class="scroll">კატეგორიები</a>
+                <a href="#exhibitions" class="scroll">გამოფენები</a>
+                <a href="#contact" class="scroll">კონტაქტი</a>
+            </div>
+            
+          </nav>
+
+        </div>  <!-- clear-container -->
+    </div>  <!-- container -->
+  </header>
+
+  <div class="parallax"  id="home">
+    <div class="blur">
+      <div class="content"> 
+        <h1><span class="orange-letter">A</span>rt & <span class="orange-letter">C</span>raft <span class="orange-letter">G</span>allery</h1>
+        <a href="#crafts" class="arrow scroll"><i class="fa fa-chevron-down arrowIcon" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div> <!-- parallax -->
+
+
+
+
+
+  <div id="crafts">
+    <div class="container">
+
+
+
+      <div class="art-block">
+        <h2 class="art-block-h2">ფერწერა</h2>
+        <div class="clear-container">      
+
+
+          <div class="owl-two owl-carousel">
           
 
-        <div class="share-box" id="show-social-box">
-            <i class="fa fa-share-alt"></i>
-            <nav class="social">
-                <a href="#" target="_blank" class="social-icons"><i class="fa fa-instagram"></i></a>
-                <a href="#" target="_blank" class="social-icons"><i class="fa fa-facebook-f"></i></a>
-                <a href="#" target="_blank" class="social-icons"><i class="fa fa-twitter"></i></a>
-            </nav> <!-- social -->
-        </div> <!-- share-box -->
-
-        <div class="red-box">
-          <div class="geolab animated zoomIn"></div>
-        </div> <!-- red-box -->
-     
-    </div> <!-- Menu_bar -->
-
-    <div class="hidden-menu-bar" id="hidden-bar">
-        <nav class="inner-menu">
-            <a href="#" class="inner-menu-links">მთავარი</a>
-            <a href="#about" class="inner-menu-links scroll">ჩვენს შესახებ</a>
-            <a href="#contact" class="inner-menu-links scroll">კონტაქტი</a>
-            <a href="#sticker" class="inner-menu-links scroll">შეუკვეთე სტიკერი</a>
-            <a href="javascript:void(0)" class="inner-menu-links" id="show-hidden-name-menu">ქართველი მხატვრები</a>
-            <nav class="hidden-name-menu">
-                <div class="name-items-wrapper first"><div class="defisi"></div><a href="#otskheli" class="scroll">პეტრე ოცხელი</a></div> <!-- name-items-wrapper -->
-                <div class="name-items-wrapper second"><div class="defisi"></div><a href="#chkadua" class="scroll">ეთერ ჭკადუა</a></div> <!-- name-items-wrapper -->
-                <div class="name-items-wrapper third"><div class="defisi"></div><a href="#firosmani" class="scroll">ფიროსმანი</a></div> <!-- name-items-wrapper -->
-            </nav> <!-- hidden-name-menu -->
-        </nav> <!-- inner-menu -->
-        <div class="long-red-box"></div>
-    </div> <!-- hidden-menu-bar -->
-
-
-<!--  mobile-header -->
-
- <div class="mobile_menu_bar" id="mobile_menu">   
-        <a href="#" class="mobile-logo"></a>
-        <div class="mobile-share-box" id="show-mobile-social-box">
-            <i class="fa fa-share-alt"></i>
-            <nav class="mobile-social">
-                <a href="#" target="_blank" class="mobile-social-icons"><i class="fa fa-instagram"></i></a>
-                <a href="#" target="_blank" class="mobile-social-icons"><i class="fa fa-facebook-f"></i></a>
-                <a href="#" target="_blank" class="mobile-social-icons"><i class="fa fa-twitter"></i></a>
-            </nav> <!-- social -->
-        </div> <!-- share-box -->
-
-        <div class="mobile-menu-item-box" id="mobile-burger">
-            <span class="menu-item"></span>
-            <span class="menu-item"></span>
-        </div> <!-- menu-item-box -->
-     
-</div> <!-- mobile_menu_bar -->
-
-    <div class="mobile-hidden-menu-bar" id="mobile-hidden-bar">
-        <nav class="mobile-inner-menu">
-            <a href="#" class="mobile-inner-menu-links">მთავარი</a><br>
-            <a href="#about" class="mobile-inner-menu-links scroll">ჩვენს შესახებ</a>
-            <a href="#contact" class="mobile-inner-menu-links scroll">კონტაქტი</a>
-            <a href="#sticker" class="mobile-inner-menu-links scroll">შეუკვეთე სტიკერი</a>       
-            <a href="#otskheli" class="mobile-inner-menu-links scroll">პეტრე ოცხელი</a>       
-            <a href="#chkadua" class="mobile-inner-menu-links scroll">ეთერ ჭკადუა</a>        
-            <a href="#firosmani" class="mobile-inner-menu-links scroll">ფიროსმანი</a>          
-        </nav> <!-- inner-menu -->
-    </div> <!-- hidden-menu-bar -->
+            <div class="img-wrapper">
+              <a href="img/paint/2.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/paint-2.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper -->   
 
 
 
-<!-- End mobile header -->    
+
+                    
+            <div class="img-wrapper">
+              <a href="img/paint/3.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/paint-3.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper -->             
+         
 
 
-	<div class="wrapper">
+          <div class="img-wrapper">
+              <a href="img/paint/5.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/paint-5.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper --> 
+
+
+
+          <div class="img-wrapper">
+              <a href="img/paint/1.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/paint-1.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper --> 
+
+
+          <div class="img-wrapper">
+              <a href="img/paint/6.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/paint-6.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper --> 
+
+      </div> <!-- carousel -->
+
+
+        </div> <!-- clear-container -->
+
+        <a href="gallery.html" class="view-all-a">ყველას ნახვა
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </a>
+
+      </div> <!-- art-block -->
+
+
+
+
+      <div class="art-block">
+        <h2 class="art-block-h2">ნამუშევრები ხეზე</h2>
+
+
+        <div class="clear-container">
+
+
+          <div class="owl-three owl-carousel">
+
+          <div class="img-wrapper">
+              <a href="img/wood/8.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/wood/8.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper -->   
+
+
+
+
+                    
+            <div class="img-wrapper">
+              <a href="img/wood/9.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/wood/9.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper -->             
+         
+
+
+          <div class="img-wrapper">
+              <a href="img/wood/13.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/wood/13.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper --> 
+
+
+
+          <div class="img-wrapper">
+              <a href="img/wood/15.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/wood/15.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper --> 
+
+
+          <div class="img-wrapper">
+              <a href="img/wood/5.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/wood/5.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper -->
+
+      </div> <!-- carousel -->
+
+        </div> <!-- clear-container -->
+        <a href="gallery.html" class="view-all-a">ყველას ნახვა
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="art-block">
+        <h2 class="art-block-h2">თექა</h2>
+        <div class="clear-container">
+
+          <div class="owl-four owl-carousel">
+
+          <div class="img-wrapper">
+              <a href="img/teqa/1.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/teqa/1.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper -->   
+
+
+
+
+                    
+            <div class="img-wrapper">
+              <a href="img/teqa/2.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/teqa/2.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper -->             
+         
+
+
+          <div class="img-wrapper">
+              <a href="img/teqa/3.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/teqa/3.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper --> 
+
+
+
+          <div class="img-wrapper">
+              <a href="img/teqa/5.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/teqa/5.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper --> 
+
+
+          <div class="img-wrapper">
+              <a href="img/teqa/6.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/teqa/6.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper -->
+
+      </div> <!-- carousel -->
+
+        </div>
+        <a href="gallery.html" class="view-all-a">ყველას ნახვა
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="art-block">
+        <h2 class="art-block-h2">გაქვავებული ხელოვნება</h2>
+        <div class="clear-container">
+
+
+          <div class="owl-five owl-carousel">
+
+          <div class="img-wrapper">
+              <a href="img/stone/1.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/stone/1.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper -->   
+
+
+
+
+                    
+            <div class="img-wrapper">
+              <a href="img/stone/2.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/stone/2.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper -->             
+         
+
+
+          <div class="img-wrapper">
+              <a href="img/stone/3.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/stone/3.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper --> 
+
+
+
+          <div class="img-wrapper">
+              <a href="img/stone/4.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/stone/4.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper --> 
+
+
+          <div class="img-wrapper">
+              <a href="img/stone/5.jpg" data-fancybox class="img-container-a">
+                <img src="img/shortcut/stone/5.jpg">
+              </a> <!-- img-container-a -->
+              <div class="img-hover">ნამუშევარი<br><span class="author-name">ავტორი</span></div> 
+            </div> <!-- img-wrapper -->
+
+      </div> <!-- carousel -->
+
+
+        </div>  <!-- clear-container -->
+
+        <a href="gallery.html" class="view-all-a">ყველას ნახვა
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </a>
+
+      </div> <!-- art-block -->
+
+
+    </div> <!-- container -->
+  </div>  <!-- crafts -->
+
+
+  <div class="author" id="authors">
+    <div class="container">
+      <h2 class="art-block-h2" style="text-align: center;padding: 0px 0px 50px;font-size: 25px;">პოპულარული კატეგორიები</h2>
+      <div class="inner-container">
         
-        <div class="left-slider">
-            <div class="left-owl owl-carousel">
 
-
-              <div class="left-slider-img" style="background-image: url(img/eteri/eteri1.jpg);"></div>
-
-
-              <div class="left-slider-img" style="background-image: url(img/petre/petre1.jpg);"></div>
-              <div class="left-slider-img" style="background-image: url(img/firosmani/niko1.jpg);"></div>
-            </div> <!-- Left-owl -->
-        </div> <!-- Left Slider -->
-
-
-        <div class="allways_modern">
-            <h1>მუდმივად თანამედროვე</h1>
-        </div> <!-- allways_modern -->
-
-
-		<div class="right-slider">
-
-      <a href="#" class="logo animated fadeInDown"></a>
-      <div class="right-owl owl-carousel">
-
-        <div class="right-slider-img" style="background-image: url(img/eteri/eteri2.jpg);">
-          <div class="blue-box"></div>
-            <p class="slide_date">1965</p>
-            <div class="white_block"></div>
-        </div> <!-- right-slider-img -->
-
-
-        <div class="right-slider-img" style="background-image: url(img/petre/petre2.jpg);">
-          <div class="blue-box"></div>
-            <p class="slide_date">1907</p>
-            <div class="white_block"></div>
-        </div> 
-
-
-        <div class="right-slider-img" style="background-image: url(img/firosmani/niko2.jpg);">
-          <div class="blue-box"></div>
-            <p class="slide_date">1862</p>
-            <div class="white_block"></div>
-        </div> 
-
-
-      </div> <!-- Right-owl -->
-
-    </div> <!-- Right Slider -->
-
-
-	</div> <!-- wrapper -->
-
-
-  <div class="pages about" id="about">
-        <div class="inner-page">
-            <section class="about-text">
-                <h1>მუდმივად თანამედროვე</h1>
-                <p>ჩვენი ვებ გვერდი ემსახურება უკონტაქტო სტიკერის დიზაინის შექმნას. იმის გარდა, რომ PAY-STICKER არის კომფორტული და სწრაფი, ასევე შესაძლებელია იყოს უნიკალური და დამზადებული მხოლოდ თქვენთვის სასურველი დიზაინით. იმისათვის, რომ თქვენი სტიკერი იყოს გამორჩეული, ვიყენებთ უნიჭიერესი ქართველი მხატვრების ნამუშევრებს, როგორებიც არიან პეტრე ოცხელი, ფიროსმანი და ეთერ ჭკადუა. ასევე, შეგვიძლია თქვენი საყვარელი მხატვრის ნახატით გაფორმება, ნებისმიერ ფერითა და ფილტრით.</p>  
-                <div class="fix-sticker"> 
-                  <a href="#sticker" class="order-sticker scroll">შეუკვეთე სტიკერი</a>     
-                </div>       
-            </section>
-             
-        </div> <!-- inner-page -->
-  </div> <!-- pages -->
-
-  <div class="pages contact" id="contact">
-        <div class="inner-page-for-contact">
-          <div class="contact-form-div">
-
-            <form class="contact-form" method="post">
-
-                <input type="text" name="" placeholder="სახელი, გვარი">
-
-                <input type="text" name="" placeholder="ბარათის ბოლო 4 ციფრი">
-
-                <textarea placeholder="მოგვწერე.."></textarea>
-
-                <input type="submit" name="" class="submit" value="გაგზავნა">
-
-            </form> <!-- contact-form -->
-
-          </div> <!-- contact-form-div  -->
-          <div class="gif">
-              <img src="img/gif/giff.gif" class="gif-img">
+        
+          <div class="categories" style="background-image: url(img/popular/popular-4.jpg);">          
+            <h1>თექა</h1>
+            <p><a href="gallery.html#teqaPage">კოლექცია - თექა</a></p>       
           </div>
-        </div> <!-- inner-page -->    
-  </div> <!-- pages -->
+       <!-- categories -->
+      
+        <div class="categories" style="background-image: url(img/popular/popular-1.jpg);">
+          <div class="categories-text-wrapper">
+            <h1>ფერწერა</h1>
+            <p><a href="gallery.html#paintPage">აკვარელი</a></p>
+          </div> <!-- categories-text-wrapper -->
+        </div> <!-- categories -->
+
+        <div class="categories" style="background-image: url(img/popular/popular-2.jpg);">
+          <div class="categories-text-wrapper">
+            <h1>სუვენირები</h1>
+            <p><a href="gallery.html#woodPage">მასალა - ხე</a></p>
+          </div> <!-- categories-text-wrapper -->
+        </div> <!-- categories -->
+
+        <div class="categories" style="background-image: url(img/popular/popular-3.jpg);">
+          <div class="categories-text-wrapper">
+            <h1>პოზიტივი</h1>
+            <p><a href="gallery.html#stonePage">მასალა - ქვა, მარმარილო</a></p>
+          </div> <!-- categories-text-wrapper -->
+        </div> <!-- categories -->
 
 
-  <div class="pages sticker" id="sticker">
-        <div class="inner-page">
-          <div class="forms-wrapper">
-            <h2>შეუკვეთე სტიკერი, სასურველი დიზაინით</h2>
-            <div class="left-form">
+      </div> <!-- inner-container -->
+    </div> <!-- container -->
+  </div> <!-- author -->
+
+  <div class="exhibition" id="exhibitions"> 
+    <div class="container clear-container">
+      <h2 class="art-block-h2" style="text-align: center;padding: 0px 0px 50px;font-size: 25px;">საერთაშორისო გამოფენები</h2>
+
+      <div class="exhibition-box">
+        <div class="exhibition-img-wrapper">
+          <img src="img/felt.jpg" class="exhibition-img">
+        </div> <!-- exhibition-img-wrapper-->
+        <a href="http://www.alligt.nl/sculptural-felt-international.html" class="exhibition-link" target="_blank">sculptural felt exhibition</a> <!-- exhibition-link -->
+      </div> <!-- exhibition-box -->
+
+      <div class="exhibition-box">
+        <div class="exhibition-img-wrapper">
+          <img src="img/stone.jpg" class="exhibition-img">
+        </div> <!-- exhibition-img-wrapper-->
+        <a href="http://nationalcraftsmuseum.nic.in/" class="exhibition-link" target="_blank">discover most inspiring museums</a> <!-- exhibition-link -->
+      </div> <!-- exhibition-box -->
+
+      <div class="exhibition-box">
+        <div class="exhibition-img-wrapper">
+          <img src="img/paint.png" class="exhibition-img">
+        </div> <!-- exhibition-img-wrapper-->
+        <a href="https://www.nytimes.com/2017/11/16/arts/design/laura-owens-whitney-museum-review.html" class="exhibition-link" target="_blank">the comedic works from artists</a> <!-- exhibition-link -->
+      </div> <!-- exhibition-box -->
+
+      <div class="exhibition-box">
+        <div class="exhibition-img-wrapper">
+          <img src="img/wood.jpg" class="exhibition-img">
+        </div> <!-- exhibition-img-wrapper-->
+        <a href="http://www.bbc.co.uk/programmes/articles/2Fy7zgkYfHB4j6DFFQVG30M/norwegian-woodcraft-comes-to-nottingham" class="exhibition-link" target="_blank">woodcrafters in Nottingham</a> <!-- exhibition-link -->
+      </div> <!-- exhibition-box -->
+
+    </div> <!-- container -->
+  </div> <!-- exhibition -->
 
 
-              <form class="left-inner-form" id="sticker-form">
-                <input type="text" name="" placeholder="სახელი, გვარი">
-                <input type="text" name="" placeholder="პირადი ნომერი">
-                <input type="text" name="" placeholder="ელ-ფოსტა">
-                <input type="text" name="" placeholder="ტელეფონის ნომერი">
-              </form> <!-- form -->
+  <footer id="contact">
+    <div class="container clear-container">
+      <div class="double left">
+        <div class="contact">
+          <p><span class="fa-container"><i class="fa fa-phone" aria-hidden="true"></i></span>000 00 00 00</p>
+          <p><span class="fa-container"><i class="fa fa-mobile" aria-hidden="true"></i></span>000 0 00 00 00</p>
+          <form>
+            <fieldset>
+              <legend>მოგვწერეთ თქვენი აზრი</legend>
+              <input type="text" name="" placeholder="სახელი">
+              <input type="text" name="" placeholder="ელ.ფოსტა">
+              <textarea placeholder="დაწერეთ შეტყობინება"></textarea>
+            </fieldset>
+          </form>
+        </div>
+      </div> 
+      <div class="double right">
 
+        <div class="map">
 
-            </div><!--
-          --><div class="right-form">
+          <iframe src="https://www.google.com/maps/embed/v1/place?q=Varketili+Zemo+Plateau+II+Micro-District,+11,+Tbilisi&key=AIzaSyC8k7xzr4-ScbLfEfgVgY9SRARgZMlHO9o" allowfullscreen>
+          </iframe>
 
-              <div class="right-inner-form">
-                <input type="text" name="" placeholder="დღე/თვე/წელი" form="sticker-form">
-                <input type="text" name="" placeholder="ქალაქი" form="sticker-form">
-                <input type="text" name="" placeholder="მისამართი,სადაც გსურთ მიიღოთ სტიკერი" form="sticker-form">
-                <input type="text" name="" placeholder="ბარათის ბოლო ოთხი ციფრი" form="sticker-form">
-                <input type="submit" name="" class="submit-order" value="გაგზავნა" form="sticker-form">
-              </div> <!-- form -->
+        </div>
+      </div>
+    </div>
+  </footer>
 
-            </div> <!-- right-form -->
-          </div> <!-- forms-wrapper -->
+  <footer id="byMe">
+    <p>Made by Me</p>
+  </footer>
+  
 
+  <div id="stop" class="scrollTop">     
+    <a href="">
+      <i class="fa fa-angle-double-left"></i>
+    </a>      
+  </div>
 
-          <div class="mobile-slider-wrapper">
-              <div class="mobile-slider">
-
-                <div class="sticker-slider">
-
-                  <div class="sticker-item"><img src="img/sticker-slide/1.png"></div>
-                  <div class="sticker-item"><img src="img/sticker-slide/2.png"></div>
-                  <div class="sticker-item"><img src="img/sticker-slide/3.png"></div>
-
-                </div> <!-- otskheli-images -->
-
-              </div> <!-- mobile-slider -->
-          </div> <!-- mobile-slider-wrapper -->
-        </div> <!-- inner-page -->
-    </div> <!-- pages -->
-
-
-    <div class="pages otskheli" id="otskheli">
-        <div class="inner-page">
-            <div class="painter-img otskheli-img"></div>
-            <div class="painter-text">
-                <h2>პეტრე ოცხელი</h2>
-                <div class="pre-text">
-                  <p class="pre-text-p">
-                    დაბადების თარიღი: 25 სექტემბერი, 1907<br>
-                    გარდაცვალების თარიღი: 1937<br>
-                    დაბადების ადგილი: ქ. ქუთაისი
-                  </p>
-                </div> <!-- pre-text -->
-                <p>თეატრის მხატვარი,ქართული ავანგარდის ერთ-ერთი ყველაზე მნიშვნელოვანი წარმომადგენელი.სხვა მხატვრებთან ერთად მან ფაქტობრივად მოახდინა რეველუცია ქართული სცენისა და კოსტიუმის დიზაინში.1913-1920 წწ.ოჯახთან ერთად ცხოვრობდა მოსკოვში.1920 წელს ის საქართველოში  დაბრუნდა და სწავლა ქუთაისის სასწავლებელში გააგრძელა.ხატვას სკოლასთან არსებულ სტუდიაში სწავლობდა.1926 წლიდან თბილისის სამხატვრო სტუდიაში სწავლობდა.პროფესორ იოსებ შარლემანის კლასში. 1937 წელს პეტრე ოცხელი დახვიტეს,იგი გახდა რეპრესიების მსხვერპლი,ტერორისტული დაჯგუფების შექმნაში წაუყენეს ბრალი და დახვრეტა მიუსაჯეს.
-                </p>
-            </div> <!-- painter-text -->
-
-            <div class="painter-slider">
-				
-        				<div class="otskheli-images">
-
-          				  <div class="otskheli-item"><img src="img/petre/item-1.jpg"></div>
-          				  <div class="otskheli-item"><img src="img/petre/item-2.jpg"></div>
-          				  <div class="otskheli-item"><img src="img/petre/item-3.jpg"></div>
-          				  <div class="otskheli-item"><img src="img/petre/item-4.jpg"></div>
-          				  <div class="otskheli-item"><img src="img/petre/item-5.jpg"></div>
-          				  <div class="otskheli-item"><img src="img/petre/item-6.jpg"></div>
-          				  <div class="otskheli-item"><img src="img/petre/item-7.jpg"></div>
-          				  <div class="otskheli-item"><img src="img/petre/item-8.jpg"></div>
-
-        				</div> <!-- otskheli-images -->
-
-            </div> <!-- painter-slider -->
-
-        </div> <!-- inner-page -->
-    </div> <!-- art-pages -->
-
-    
-    <div class="pages chkadua" id="chkadua">
-        <div class="inner-page">
-            <div class="painter-img chkadua-img"></div>
-            <div class="painter-text">
-              <h2>ეთერ ჭკადუა</h2>
-              <div class="pre-text">
-                  <p class="pre-text-p"">
-                    დაბადების თარიღი : 1965,თბილისი,საქარათველო<br>
-                    განათლება<br>
-                    1987-1988 თბილისის სახელმწიფო სამხატვრო აკადემია,ხელოვნების ფაკულტეტი<br>
-                    1981-1986 თბილისის სახელმწიფო სამხატვრო აკადემია,დიზაინის ფაკულტეტი<br>
-                    1988 თბილისის სახელმწიფო სამხატვრო აკადემია,ასპირანტურა<br>
-                    დარგი: ფერწერა
-                  </p>
-                </div> <!-- pre-text -->
-              <p>მისი ნამუშევრები ხშირად ყოფილა დისკუსიის მთავარი თემა შინაარსიდან გამომდინარე.თუმცა მის ნახატებს და მიმდევრობას ფრიდა კალოს და სინდი შერმანის ნამუშევრებსაც ამსგავსებენ.</p>
-            </div> <!-- painter-text -->
-            <div class="painter-slider">
-            	
-
-        				<div class="chkadua-images">
-
-        				  <div class="chkadua-item"><img src="img/eteri/item-1.jpg"></div>
-        				  <div class="chkadua-item"><img src="img/eteri/item-2.jpg"></div>
-        				  <div class="chkadua-item"><img src="img/eteri/item-3.jpg"></div>
-        				  <div class="chkadua-item"><img src="img/eteri/item-4.jpg"></div>
-        				  <div class="chkadua-item"><img src="img/eteri/item-5.jpg"></div>
-        				  <div class="chkadua-item"><img src="img/eteri/item-6.jpg"></div>
-
-        				</div> <!-- chkadua-images -->
-
-
-            </div>  <!-- painter-slider -->
-        </div> <!-- inner-page -->
-    </div> <!-- pages -->
-
-    
-
-    <div class="pages firosmani-page" id="firosmani">
-        <div class="inner-page">
-            <div class="painter-img firosmani-img"></div>
-            <div class="painter-text">
-            <h2>ფიროსმანი</h2>
-              <div class="pre-text">
-                  <p class="pre-text-p">
-                    ოფიციალური სახელი: ნიკოლოზ ფიროსმანაშვილი<br>
-                    დაბადების თარიღი: 5 აპრილი,1862<br>
-                    გარდაცვალების თარიღი: 1918<br>
-                    დაბადების ადგილი: სოფელი მირზაანი,კახეთი
-                  </p>
-                </div> <!-- pre-text -->
-              <p>დიდი ქართველი პრიმიტივისტი მხატვარი მშობლების გარდაცვალების შემდეგ თბილისში გადმოვიდა საცხოვრებლად.ბავშვობაშივე იჩენდა ინტერესს მხატვრობისადმი.ბევრს ხატავდა კიდეც.სპეციალური სამხატვრო განათლება არ მიუღია.1880-იან წლებში თვითნასწავლ გ.ზაზიაშილთნ ერთად გახსნა ფერწერის სახელოსნო და აბრების შეკვეთას იღებდა.1890-1884 წწ. კონდუქტორად მუშაობდა ამიერკავკასიის რკინიგზაზე.შემდეგ ვაჭრობაშიც სცადა ბედი.მე-19 საუკუნის მიჯნაზე ტავს თბილისის მედუქნეებთან აფარებდა და მათ შეკვეთებს,აბრებს პორტრეტებს და სურათებს ხატავდა.მის შემოქმედებაში დიდი ადგილი უჭირავს ანიმალისტურ ჟანრს.ის დღემდე ერთადერთი ქართველი ანიმალისტია.</p>
-            </div> <!-- painter-text -->
-
-            <div class="painter-slider">            	
-
-				<div class="firosmani-images">          
-				  <div class="firosmani-items"><img src="img/firosmani/item-1.jpg"></div>
-				  <div class="firosmani-items"><img src="img/firosmani/item-2.jpg"></div>
-				  <div class="firosmani-items"><img src="img/firosmani/item-3.jpg"></div>
-				  <div class="firosmani-items"><img src="img/firosmani/item-4.jpg"></div>
-				</div> <!-- firosmani-images -->
-
-
-            </div> <!-- painter-slider -->
-        </div> <!-- inner-page -->
-    </div> <!-- pages -->
-
-    
-
-    
-
-    
-
-	<!-- js -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/owl.carousel.js"></script>
-  <script src="slick/slick.min.js"></script>
-  <script src="js/jquery.viewportchecker.min.js"></script>
-  <script src="js/slider.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script type="text/javascript" src="js/myscripts.js"></script>
 </body>
 </html>

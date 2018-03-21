@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('font-awesome.css');
+@import url('flex.css');
+@import url('color.css');
+@import url('detail.css');
+@import url('about-artist.css');
+@import url('gallery.css');
 html, body {
     margin: 0; 
     padding: 0;
@@ -18,9 +26,6 @@ html, body {
     z-index: 1000;
     width: 50px;
     height: 50px;
-}
-.flex {
-    display: flex;
 }
 .scrollTop a {
     display: block;
@@ -55,15 +60,11 @@ header {
     margin: 0 auto;
     padding: 0 10px;
 }
-.clear-container:after {
-    content: "";
-    display: block;
-    clear: both;
-}
+
 #logo {
+    font-family: 'Audiowide', cursive;
     font-size: 22px;
     height: 45px;
-    font-weight: bolder;
     line-height: 45px;
     float: left;
     font-style: italic;
@@ -141,7 +142,7 @@ button:focus {
     z-index: 1001;
     top: 66px; 
     right: 0;
-    background-color: rgba(0,0,0, 0.3);
+    background-color: rgba(0,0,0, 0.5);
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: width 0.5s;  
@@ -153,26 +154,18 @@ button:focus {
 .sidenav a {
     padding: 8px 8px 8px 50px;
     font-size: 20px;
-    color: white;
     display: block;
     transition: 0.3s;
     font-family: 'BPG Nino Mtavruli';
 }
 
-.sidenav a:hover {
-    color: rgba(255,165,0, .8);
+/* ---------------- filter --------------------- */
+.filter {
+    height: 100px;
+    width: 100%;
 }
 /* ---------------- Parallax ---------------------*/
-.gallery-parallax {
-    margin-top: 100px;
-    height: 300px;
-    width: 100%;
-    background-image: url(../img/parallax/parallax-gallery-bg.jpg);
-    /*background-position: center;*/
-    /*background-size: cover;*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
 
 .parallax {
     background-image: url("../img/parallax/parallax-bg.jpg");
@@ -188,19 +181,13 @@ button:focus {
     background-color: rgba(0,0,0, .1);
     width: 100%;
 }
-.lightblur {
-    height: 100%;
-    background-color: rgba(0,0,0, 0.1);
-    width: 100%;
-}
-.lightblur h1 {
-    color: #fff;
+
+.blur h1 {
     text-align: center;
     padding-top: 50px;
     font-size: 40px;
 }
-.lightblur p {
-    color: #fff;
+.blur p {
     text-align: center;
     font-size: 20px;
     padding: 30px 0 0;
@@ -213,13 +200,13 @@ button:focus {
     height: 100%;
 }
 .content h1 {
+    font-family: 'Audiowide', cursive;
     position: absolute;
     cursor: default;
     box-shadow: 0 0 40px #fff;
     transition: box-shadow 0.5s;
     padding: 10px;
     text-align: center;
-    color: #fff;
     font-size: 60px;
     width: 100%;
     top: 50%;
@@ -240,7 +227,6 @@ a.arrow {
     height: 30px;
 }
 .arrowIcon {
-    color: #fff;
     font-size: 30px;
     transition: transform 0.5s;
 }
@@ -261,8 +247,30 @@ a.arrow {
     font-family: 'BPG Nino Mtavruli';
     letter-spacing: .7px;
     font-size: 18px;
-    margin: 10px 5px 10px 0;
-    padding: 5px 0 5px 0;
+    margin: 10px 0;
+    padding: 8px 10px 5px;
+    background-color: #fff;
+}
+.view-all-a {
+    font-family: 'BPG Nino Mtavruli';
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 0px 0 20px;
+    padding: 3px 0 3px 20px;
+    text-align: center;
+    letter-spacing: .7px;
+    border-left: 2px solid #000;
+}
+.fa.fa-angle-double-right {
+    font-size: 16px;
+    margin-left: 2px;
+    transition: transform .5s;
+}
+.view-all-a:hover .fa.fa-angle-double-right{
+    transform: translateX(3px);
+}
+.owl-carousel {
+    margin-bottom: 40px;
 }
 .owl-item {
     display: flex;
@@ -293,17 +301,50 @@ a.arrow {
     width: auto;
 }
 
-.img-hover {
-    font-family: 'BPG Nino Mtavruli';
-    font-size: 16px;
-    color: #BDBDBD;
+.text-wrapper {
     width: 100%;
     height: 60px;
     background-color: #FAFAFA;
-    padding: 15px 0 0 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.art-name_author {
+    font-family: 'BPG Nino Mtavruli';
+    width: 60%;
+    position: relative;
+}
+.image-name {
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .author-name {
-    font-size: 14px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 11px;
+    display: block;
+}
+.price_info {
+    width: 40%;
+    position: relative;
+}
+.price {
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.more-info {
+    font-family: 'BPG Nino Mtavruli';
+    display: block;
+    font-size: 11px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 a:focus {
     outline: none;
@@ -315,28 +356,7 @@ a:focus {
     display: none;
 }
 
-.view-all-a {
-    font-family: 'BPG Nino Mtavruli';
-    font-size: 12px;
-    display: block;
-    margin: 15px 5px 5px auto;
-    padding: 3px 0;
-    width: 120px;
-    text-align: center;
-    letter-spacing: .7px;
-    color: #9E9E9E;
-}
-.fa.fa-angle-double-right {
-    font-size: 16px;
-    margin-left: 8px;
-    transition: transform .5s;
-}
-.view-all-a:hover {
-    color: rgba(255,165,0, .8);
-}
-.view-all-a:hover .fa.fa-angle-double-right{
-    transform: translateX(5px);
-}
+
 /* ------------ authors ----------------------- */
 #authors {
     padding: 65px 0 10px;
@@ -363,7 +383,6 @@ a:focus {
 .categories h1 {
     font-family: 'BPG Nino Mtavruli';
     font-weight: bolder;
-    color: rgba(255,165,0, 1);
     font-size: 30px;
     position: absolute;
     left: -1px;
@@ -382,7 +401,6 @@ a:focus {
 .categories p a {
     font-family: 'BPG Nino Mtavruli';
     font-weight: bold;
-    color: #fff;
     font-size: 15px;
     display: block;
     padding: 10px 0 6px;
@@ -390,7 +408,6 @@ a:focus {
 }
 .categories p a:hover {
     background-color: rgba(255,255,255, .9);
-    color: rgba(255,165,0, .8);
 }
 /*-------------Exhibition-----------------*/
 .exhibition {
@@ -414,8 +431,6 @@ a:focus {
     width: 100%;
 }
 .exhibition-link {
-    font-family: 'Montserrat', sans-serif;
-    color: #BDBDBD;
     font-size: 18px;
     display: block;
     width: 80%;
@@ -423,9 +438,6 @@ a:focus {
     line-height: 20px;
     text-transform: capitalize;
     text-align: center;
-}
-.exhibition-link:hover {
-    color: orange;
 }
 /* ------------------ learn ------------- */
 #tutorials {
@@ -440,7 +452,7 @@ a:focus {
     float: left;
     padding: 50px;
 }
-.learn-bottom-container >.iframe {
+.learn-bottom-container > .iframe {
     padding-top: 0px;
 }
 iframe { 
@@ -465,9 +477,7 @@ footer#contact {
 .left {
   padding-right: 5px;
 }
-.contact  {
-    color: #fefefe;
-}
+
 .contact p {
     margin-bottom: 5px;
     font-size: 14px;
@@ -497,7 +507,6 @@ input {
     padding: 5px 0;
     margin: 10px 0 20px;
     background-color: transparent;
-    color: #fefefe;
     font-size: 14px;
 }
 input:focus {
@@ -513,7 +522,6 @@ textarea {
     resize: none;
     border-bottom: 2px solid #fefefe; 
     background-color: transparent;
-    color: #fefefe;
     font-size: 14px;
 }
 textarea:focus {
@@ -535,112 +543,32 @@ iframe {
     background-color: rgba(0,0,0, 0.5);
 }
 #byMe p {
-    color: rgba(255,255,255, 0.5);
     text-align: center;
     font-size: 10px;
     text-transform: uppercase;
     padding: 5px 0;
 }
-/* --------------- paint.html ----------------------------- */
 
-
-
-/*  ############### Ise tope ###############################*/
-#crafts2 {
-    padding-top: 50px;
-}
-.portfolio-box {
-  margin: 60px auto;
-}
-.filter-tabs-container {
-  font-size: 0;
-  margin: 0 0 50px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.filter-tabs {
-    font-family: 'BPG Nino Mtavruli';
-    display: inline-block;
-    padding: 10px 15px 6px;
-    cursor: pointer;
-    font-size: 16px;
-    background-color: #F5F5F5;
-    color: #000;
-}
-.grid-item {
-  width: 25%;
-}
-.polaroid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-  padding: 10px;
-  max-width: 250px;
-  margin: 0 auto 20px;
-  background-color: #F5F5F5;
-}
-.polaroid img {
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0 auto;
-  opacity: 1;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  display: block;
-}
-.polaroid:hover .polaroid-img {
-  opacity: 0.3;
-  cursor: zoom-in;
-}
-
-.polaroid:hover .website-link {
-  opacity: 1;
-}
-
-div.filter-tabs:active,
-div.filter-tabs.is-checked {
-  background-color: rgba(255,165,0, .8);
-}
-div.filter-tabs.is-checked {
-  color: white;
-}
-.orange-letter {
-    color: rgba(255,165,0, .8);
-}
 /*--------------- responsive - 1200px ----------------------*/
 
 @media screen and (max-width: 1200px) {
 
-    .img-container:nth-child(5) {
-        display: none;
-    }
-    .img-container {
-        width: 25%;
-    }
-    .img-container:nth-child(4) {
-        margin-right: 0;
-    }
-    .inner-container {
-        width: 700px;
-        margin: 0 auto 50px;
-        flex-wrap: wrap;
-        box-shadow: 0 0 50px rgba(0,0,0, .2);
-    }
-    .categories {
-        width: 50%;
-    }
-    .categories h1 {
-        color: #fff;
+.inner-container {
+    width: 700px;
+    margin: 0 auto 50px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 50px rgba(0,0,0, .2);
+}
+.categories {
+    width: 50%;
+}
+.categories h1 {
+    color: #fff;
 }
 
-    .grid-item {
-        width: 33%;
-    }
+.grid-item {
+    width: 33%;
+}
 
 
 
@@ -651,22 +579,10 @@ div.filter-tabs.is-checked {
 /*--------------- responsive - 960px ----------------------*/
 @media screen and (max-width: 960px) {
 
-    .content h1 {
-        font-size: 40px;
-    }
-
-/* ----------------- crafts --------------- */
-
-
-.img-container:nth-child(4) {
-    display: none;
+.content h1 {
+    font-size: 40px;
 }
-.img-container:nth-child(3) {
-        margin-right: 0;
-    }
-.img-container {
-    width: 33.3334%;
-}
+
 
 }
 /*--------------- responsive - 768px ----------------------*/
@@ -703,26 +619,16 @@ nav.nav1200 {
 
 /* ----------------- crafts --------------- */
 
-.img-container:nth-child(3) {
-    display: none;
-}
-.img-container:nth-child(2) {
-        margin-right: 0;
-}
-.img-container {
-    width: 50%;
-}
-
 .inner-container {
-        width: 100%;
-        display: block;
-        flex-wrap: initial;
-        box-shadow: none;
-    }
-    .categories {
-        width: 350px;
-        margin: 0 auto;
-    }
+    width: 100%;
+    display: block;
+    flex-wrap: initial;
+    box-shadow: none;
+}
+.categories {
+    width: 350px;
+    margin: 0 auto;
+}
 
 
 .exhibition-box {
@@ -775,19 +681,13 @@ textarea {
 .right {
     padding: 0;
 }
-/* -------------- paint.html ----------------*/
-#paint {
-    padding-top: 40px;
-}
-.column {
-    width: 50%;
-}
 
-.lightblur h1 {
+
+.blur h1 {
     padding-top: 50px;
     font-size: 30px;
 }
-.lightblur p {
+.blur p {
     font-size: 18px;
     padding: 25px 0 0;
     width: 80%;
@@ -801,18 +701,6 @@ textarea {
   width: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 /*--------------- responsive - 568px ----------------------*/
@@ -820,20 +708,17 @@ textarea {
 @media screen and (max-width: 568px) {
 
 
-/* ----------------- crafts --------------- */
+.art-block-h2 {
+    font-family: 'BPG Nino Mtavruli';
+    letter-spacing: .7px;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 8px 10px 5px;
+    background-color: #fff;
+}
 
 .view-all-a {
     font-size: 10px;
-}
-
-.img-container:nth-child(2) {
-    display: none;
-}
-.img-container:nth-child(1) {
-        margin-right: 0;
-    }
-.img-container {
-    width: 100%;
 }
 
 .categories {
@@ -848,15 +733,12 @@ textarea {
 }
 /* -------------- paint.html ----------------*/
 
-.column {
-    width: 100%;
-}
 
-.lightblur h1 {
+.blur h1 {
     padding-top: 40px;
     font-size: 20px;
 }
-.lightblur p {
+.blur p {
     font-size: 16px;
     width: 85%;
     line-height: 22px;

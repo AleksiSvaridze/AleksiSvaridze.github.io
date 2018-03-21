@@ -157,55 +157,69 @@ $(window).scroll(function() {
 
 
 
-/*-------- modal ----------------------------------------*/
+// detail pages sliders
 
-function openModal() {
-  document.getElementById("modal1").style.display = "block";
-};
+$(".same-images-slider").owlCarousel({
+            loop:false,
+            autoplay:false,
+            margin: 10,
+            responsiveClass:true,
+            responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            500:{
+                items:2,
+                nav:false
+            },
+            750:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:4,
+                nav:false
+            },
+            1200:{
+                items:4,
+                nav:false,
+                loop:false
+            }
+      }
+    });
 
-function closeModal() {
-  document.getElementById("modal1").style.display = "none";
-};
-//-------------
-function openModal2() {
-  document.getElementById("modal2").style.display = "block";
-};
+$(".more-images-slider").owlCarousel({
+            loop:false,
+            autoplay:false,
+            margin: 10,
+            responsiveClass:true,
+            responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            500:{
+                items:2,
+                nav:false
+            },
+            750:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:4,
+                nav:false
+            },
+            1200:{
+                items:4,
+                nav:false,
+                loop:false
+            }
+      }
+    });
 
-function closeModal2() {
-  document.getElementById("modal2").style.display = "none";
-};
-//-------------
-function openModal3() {
-  document.getElementById("modal3").style.display = "block";
-};
-
-function closeModal3() {
-  document.getElementById("modal3").style.display = "none";
-};
-//-------------
-function openModal4() {
-  document.getElementById("modal4").style.display = "block";
-};
-
-function closeModal4() {
-  document.getElementById("modal4").style.display = "none";
-};
-//-------------
-function openModal5() {
-  document.getElementById("modal5").style.display = "block";
-};
-
-function closeModal5() {
-  document.getElementById("modal5").style.display = "none";
-};
-//-------------
-function openModal6() {
-  document.getElementById("modal6").style.display = "block";
-};
-
-function closeModal6() {
-  document.getElementById("modal6").style.display = "none";
-};
+// scroll
 
 var scrollTop = $(".scrollTop");
 

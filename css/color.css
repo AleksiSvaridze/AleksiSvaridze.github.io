@@ -1,0 +1,116 @@
+body {
+	color: #757575;
+}
+a {
+	color: #757575;;
+}
+a:hover {
+	color: #424242;
+}
+.sidenav a {
+	color: white;
+}
+.sidenav a:hover {
+    color: #E0E0E0;
+}
+.arrowIcon {
+    color: #fff;
+}
+.more-info {
+    color: #39c;
+}
+.view-all-a {
+    color: #39c;
+}
+.view-all-a:hover {
+    color: rgba(255,165,0, .8);
+}
+.categories p a {
+    color: #fff;
+}
+.categories p a:hover {
+    color: rgba(255,165,0, .8);
+}
+.exhibition-link {
+    color: #BDBDBD;
+}
+.exhibition-link:hover {
+    color: orange;
+}
+.art-image-description-link {
+	color: #39c;
+}
+.art-image-description-link:hover {
+    color: #BDBDBD;
+}
+.view-all {
+	color: #39c;
+}
+.view-all:hover {
+	color: rgba(255,165,0, .8);
+}
+.author-name {
+    color: #BDBDBD;
+}
+.author-name:hover {
+    color: #424242;
+}
+
+
+
+
+
+/* headings  */
+
+h1, h2, h3, h4, h5, h6 {
+	color: #424242;
+}
+.blur h1 {
+    color: #fff;
+}
+.blur p {
+    color: #fff;
+}
+.content h1 {
+    color: #fff;
+}
+.categories h1 {
+    color: rgba(255,165,0, 1);
+}
+
+
+/*  div  */
+
+div.contact  {
+    color: #fefefe;
+}
+.filter-tabs {
+    color: #000;
+}
+div.filter-tabs.is-checked {
+  color: white;
+}
+
+
+
+
+/*   form tags   */
+
+input {
+    color: #fefefe;
+}
+textarea {
+    color: #fefefe;
+}
+
+/*     p       */
+
+#byMe p {
+    color: rgba(255,255,255, 0.5);
+}
+
+/*   span   */
+
+.orange-letter {
+    color: rgba(255,165,0, .8);
+}

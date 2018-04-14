@@ -1,3 +1,60 @@
+//  viewportChecker
+
+
+    $('.mainTextPng').addClass('hidden').viewportChecker({
+      classToAdd: 'visible animated fadeInLeft',
+      offset: 100
+    });
+
+    $('.arrowDown').addClass('hidden').viewportChecker({
+      classToAdd: 'visible animated fadeInDown',
+      offset: 100
+    });
+
+
+// about photography
+
+    $('.about-h1').addClass('hidden').viewportChecker({
+      classToAdd: 'visible animated fadeInRight',
+      offset: 100
+    });
+
+    $('.about-p').addClass('hidden').viewportChecker({
+      classToAdd: 'visible animated fadeInLeft',
+      offset: 100
+    });
+
+    $('.fast').addClass('hidden').viewportChecker({
+      classToAdd: 'visible animated fadeInRight',
+      offset: 100
+    });
+
+    $('.slow').addClass('hidden').viewportChecker({
+      classToAdd: 'visible animated fadeInRightSlow',
+      offset: 100
+    });
+
+    $('.verySlow').addClass('hidden').viewportChecker({
+      classToAdd: 'visible animated fadeInRightVerySlow',
+      offset: 100
+    });
+
+// Gallery
+
+
+
+// Contact
+
+  $('.contactBg').addClass('hidden').viewportChecker({
+    classToAdd: 'visible animated fadeInLeft',
+    offset: 100
+  });
+
+  $('.contactBox').addClass('hidden').viewportChecker({
+    classToAdd: 'visible animated fadeInRight',
+    offset: 100
+  });
+
 
 
 // Hide - Show Menu Window
@@ -75,4 +132,4 @@ $(window).scroll(function() {
       $(this).parent().siblings().removeClass('active');
     } 
 
-  }); // End Slow scroll scripts
+}); // End Slow scroll scripts

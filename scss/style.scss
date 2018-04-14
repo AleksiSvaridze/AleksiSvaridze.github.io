@@ -25,6 +25,12 @@ $menuItemSize: 20px;
 $nino: 'BPG Nino Mtavruli Bold';
 $myriad: 'MyriadPro-Regular';
 
+.hidden {
+	opacity: 0;
+}
+.visible {
+	opacity: 1;
+}
 
 // Main Styles
 

@@ -14,11 +14,6 @@
 
 // about photography
 
-    $('.about-h1').addClass('hidden').viewportChecker({
-      classToAdd: 'visible animated fadeInRight',
-      offset: 100
-    });
-
     $('.about-p').addClass('hidden').viewportChecker({
       classToAdd: 'visible animated fadeInLeft',
       offset: 100
@@ -40,6 +35,26 @@
     });
 
 // Gallery
+
+  $('.bottomFast').addClass('hidden').viewportChecker({
+      classToAdd: 'visible animated fadeInFirst',
+      offset: 100
+    });
+
+    $('.bottomMiddle').addClass('hidden').viewportChecker({
+      classToAdd: 'visible animated fadeInSecond',
+      offset: 100
+    });
+
+    $('.bottomMiddleSlow').addClass('hidden').viewportChecker({
+      classToAdd: 'visible animated fadeInThird',
+      offset: 100
+    });
+
+    $('.bottomSlow').addClass('hidden').viewportChecker({
+      classToAdd: 'visible animated fadeInFour',
+      offset: 100
+    });
 
 
 

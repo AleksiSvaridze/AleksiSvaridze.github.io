@@ -11,7 +11,7 @@ $contactBgGrey: #EBE8DE;
 $contactColor: #FCFCFC;
 $dividerBg: #69258F;
 $white: #fff;
-$menuItemColor: #1A1A1A;
+$menuItemColor: #1A1A1A; 
 $menuItemBorderColor: #652D89;
 
 
@@ -496,14 +496,14 @@ footer {
 		right: 100%;
 	}
 	.hiddenMobileMenu {
-		padding: 220px 0 0;
+		padding: 200px 0 0;
 		position: fixed;
 		top: 0;
 		left: 0;
 		z-index: 10;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(255,255,255, .8);
+		background-color: rgba(255,255,255, .9);
 		overflow: auto;
 	}
 	.mobileMenuLinks {
@@ -511,7 +511,7 @@ footer {
 		text-transform: uppercase;
 		display: block;
 		color: #1A1A1A;
-		padding: 50px 0;
+		padding: 20px 0;
 		text-align: center;
 	}
 	.Three-pic {

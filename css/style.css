@@ -1,5 +1,4 @@
 /* Fonts */
-@import url(reset.css);
 @import url(fonts.css);
 .hidden {
   opacity: 0; }

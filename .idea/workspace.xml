@@ -18,12 +18,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="158" column="44" selection-start-line="158" selection-start-column="44" selection-end-line="158" selection-end-column="44" />
+            <state relative-caret-position="306">
+              <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+              <folding>
+                <element signature="e#4834#4840#0" expanded="true" />
+                <element signature="e#4840#4846#0" expanded="true" />
+                <element signature="e#4846#4852#0" expanded="true" />
+                <element signature="e#4925#4931#0" expanded="true" />
+                <element signature="e#4931#4937#0" expanded="true" />
+                <element signature="e#4937#4943#0" expanded="true" />
+                <element signature="e#5016#5022#0" expanded="true" />
+                <element signature="e#5022#5028#0" expanded="true" />
+                <element signature="e#5028#5034#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,8 +42,8 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            <state relative-caret-position="206">
+              <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -74,8 +85,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="410" />
+    <option name="y" value="6" />
     <option name="width" value="939" />
     <option name="height" value="735" />
   </component>
@@ -84,7 +96,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,6 +112,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -151,18 +163,19 @@
       <workItem from="1524069264296" duration="595000" />
       <workItem from="1524109358472" duration="11951000" />
       <workItem from="1524124415280" duration="10266000" />
-      <workItem from="1524142827739" duration="1237000" />
+      <workItem from="1524142827739" duration="1633000" />
+      <workItem from="1524197089864" duration="4967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80719000" />
+    <option name="totallyTimeSpent" value="86082000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="410" y="6" width="939" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1532738" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22863485" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32994923" />
@@ -188,6 +201,31 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2686">
+          <caret line="158" column="44" selection-start-line="158" selection-start-column="44" selection-end-line="158" selection-end-column="44" />
+          <folding>
+            <element signature="e#4834#4840#0" expanded="true" />
+            <element signature="e#4840#4846#0" expanded="true" />
+            <element signature="e#4846#4852#0" expanded="true" />
+            <element signature="e#4925#4931#0" expanded="true" />
+            <element signature="e#4931#4937#0" expanded="true" />
+            <element signature="e#4937#4943#0" expanded="true" />
+            <element signature="e#5016#5022#0" expanded="true" />
+            <element signature="e#5022#5028#0" expanded="true" />
+            <element signature="e#5028#5034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/services.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2839">
@@ -422,15 +460,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="158" column="44" selection-start-line="158" selection-start-column="44" selection-end-line="158" selection-end-column="44" />
+        <state relative-caret-position="306">
+          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+          <folding>
+            <element signature="e#4834#4840#0" expanded="true" />
+            <element signature="e#4840#4846#0" expanded="true" />
+            <element signature="e#4846#4852#0" expanded="true" />
+            <element signature="e#4925#4931#0" expanded="true" />
+            <element signature="e#4931#4937#0" expanded="true" />
+            <element signature="e#4937#4943#0" expanded="true" />
+            <element signature="e#5016#5022#0" expanded="true" />
+            <element signature="e#5022#5028#0" expanded="true" />
+            <element signature="e#5028#5034#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        <state relative-caret-position="206">
+          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
         </state>
       </provider>
     </entry>

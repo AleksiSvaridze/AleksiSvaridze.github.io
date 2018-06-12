@@ -141,6 +141,9 @@ h1, h2, h3, h4, h5, h6 {
 .about-box-2-h2 {
 	font-size: 25px;
 }
+.about-box-jobTitle {
+	
+}
 .about-box-2-h4 {
 	font-size: 20px;
 	font-weight: bold;
@@ -154,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 .skills-box-1, .skills-box-2 {
 	width: 50%;
 	float: left;
-	padding: 10px 0;
+	padding: 0 0 10px;
 }
 .colored-links {
 	color: lightblue;

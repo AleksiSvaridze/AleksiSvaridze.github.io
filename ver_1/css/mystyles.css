@@ -1,0 +1,500 @@
+@import url("https://cdn.web-fonts.ge/fonts/bpg-nino-elite-caps/css/bpg-nino-elite-caps.min.css");
+html, body {
+	height: 100%; 
+	width: 100%;
+	font-family: 'BPG Arial';
+	font-family: 'Montserrat-Regular';
+	color: #979696;
+}
+body {
+	background-color: #F5F5F5;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'BPG Nino Mtavruli';
+}
+.scrollTop {
+	position: fixed;
+	right: 28px;
+	bottom: 10px;
+	background-color: red;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-o-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+	z-index: 1000;
+}
+.scrollTop a {
+	padding: 0 10px 0 12px;
+	display: inline-block;
+}
+.fa.fa-angle-double-left {
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	font-size: 40px;
+	color: #fff;
+	margin-left: 4px;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.header {
+	width: 100%;
+	background-color: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0 1px 5px rgba(0,0,0, 0.5);
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+#logo {
+	display: block;
+	font-size: 20px;
+	height: 48px;
+	line-height: 48px;
+	font-style: italic;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	float: left;
+}
+.header-nav {
+	float: right;
+	font-size: 0;
+}
+#menu-icon {
+	display: none;
+	color: #fff;
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+}
+.myIcon {
+	font-size:48px;
+	color: #fff;
+}
+.nav-ul li {
+	display: inline-block;
+}
+.nav-ul li a {
+	font-family: "BPG Nino Elite Caps", sans-serif;
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	padding: 17px 20px 15px;
+}
+.current {
+	background-color: red;
+	border-bottom: 2px solid white;
+}
+.nav-ul li:hover {
+	border-bottom: 2px solid white;
+}
+.full-screen {
+	width: 100%;
+	height: 100%;
+	background: url('../img/developer.jpg') no-repeat 50% 50%;
+	background-size: cover;
+	display: table;
+}
+.full-screen-div {
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+}
+
+.full-screen-h2 {
+	font-size: 30px;
+	width: 420px;
+	margin: 0 auto;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+.full-screen-h1 {
+	font-size: 60px;
+	width: 420px;
+	margin: 0 auto;
+	text-shadow: 1px 2px 20px rgba(0, 0, 0, .8);
+	font-weight: bold;
+}
+
+.main-h1 {
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0px 0 30px;
+	padding-top: 100px;
+}
+.main-p {
+	font-size: 20px;
+}
+.about {
+	margin: 0 auto 60px;
+	padding-top: 120px;
+	background-color: #fff;
+}
+.about-box-2-h2 {
+	font-size: 25px;
+}
+.about-box-jobTitle {
+	
+}
+.about-box-2-h4 {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Montserrat-Regular';
+	padding: 20px 0;
+}
+.about-box-2-p {
+	font-size: 16px;
+	line-height: 30px;
+}
+.skills-box-1, .skills-box-2 {
+	width: 50%;
+	float: left;
+	padding: 0 0 10px;
+}
+.colored-links {
+	color: lightblue;
+}
+.colored-links:hover {
+	color: #60adfb;
+}
+table {
+	width: 100%;
+	font-size: 10px;
+}
+.percentage {
+	text-align: right;
+}
+progress {
+	width: 100%;
+	margin: 3px 0 17px;
+	border: none;
+}
+/* ----------- portfolio ----------------*/
+.portfolio-box {
+	margin: 60px auto;
+}
+.filter-tabs-container {
+	font-size: 0;
+	background-color: #000;
+	color: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0, 0.5);
+	margin: 0 0 20px 0;
+	display: flex;
+	justify-content: center;
+}
+.filter-tabs {
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-size: 16px;
+	border-bottom: 1px solid transparent;
+}
+.filter-tabs:hover {
+	border-bottom: 1px solid #fff;
+}
+.grid-item {
+	width: 25%;
+}
+.polaroid {
+	width: 90%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	padding: 10px;
+	max-width: 250px;
+	margin: 0 25px 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+	0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #f2f2f2;
+}
+.polaroid img {
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	opacity: 1;
+	transition: .5s ease;
+  	backface-visibility: hidden;
+  	display: block;
+}
+.website-link {
+  transition: .3s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.polaroid:hover .polaroid-img {
+  opacity: 0.3;
+}
+
+.polaroid:hover .website-link {
+  opacity: 1;
+}
+.polaroid-p {
+	background-color: white;
+	color: red;
+	font-weight: bold;
+	display: block;
+	padding: 20px 10px;
+	font-size: 14px;
+	text-align: center;
+}
+
+div.filter-tabs:active,
+div.filter-tabs.is-checked {
+  background-color: red;
+  border-bottom: 1px solid #fff;
+}
+div.filter-tabs.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+/*--------------  Contact Section-------*/
+
+.contact-box {
+	margin: 60px auto;
+}
+
+.contact-boxes {
+	width: 50%;
+	float: left;
+	background-color: #F5F5F5;
+	padding: 0 10px;
+}
+p.contact-p {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.fa-icons {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	margin-right: 20px;
+}
+.mail-form {
+	width: 100%;
+	margin: 0 auto 0 0;
+}
+.mail-form input:focus, .mail-form textarea:focus {
+	outline: none;
+}
+.input-field {
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding: 0 10px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid grey;
+	border-left: 2px solid grey;
+	background-color: #F5F5F5;
+}
+.textarea-field {
+	display: block;
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 100px;
+	min-height: 100px;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid grey;
+	border-left: 2px solid grey;
+	background-color: #F5F5F5;
+}
+.submit-field {
+	width: 100px;
+	height: 40px;
+	display: block;
+	background-color: grey;
+	border: 1px solid grey;
+	color: #fff;
+	cursor: pointer;
+}
+.submit-field:hover {
+	color: grey;
+	background-color: #fff;
+}
+iframe {
+	width: 100%;
+	height: 200px;
+	border: 0;
+	display: block;
+}
+.top-footer {
+	width: 100%;
+}
+.bottom-footer {
+	width: 100%;
+	background-color: #000;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.footer-p {
+	color: rgba(255,255,255, 0.7);
+	text-transform: capitalize;
+	padding: 10px 0;
+}
+
+@media screen and (max-width: 1030px) {
+
+.polaroid-p {
+	font-size: 12px;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+#logo {
+	font-size: 18px;
+	line-height: 38px;
+	height: 38px;
+}
+#menu-icon {
+	display: inline-block;
+	width: 37px;
+	height: 37px;
+}
+.myIcon {
+	font-size:37px;
+}
+nav ul.nav-ul, nav:active ul.nav-ul {
+	display: none;
+    z-index: 1000;
+    position: absolute;
+    right: 0;
+    top: 37px;
+    width: 100%;
+    height: 100vh;
+}
+nav.active ul.nav-ul {
+  display: block;
+  padding-top: 0;
+  background: #000;
+}
+.nav-ul li {
+	display: block;
+}
+.nav-ul li:hover {
+	border-bottom: none;
+	background-color: red;
+}
+.current {
+	border-bottom: none;
+}
+.nav-ul li a {
+	font-family: 'BPG Nino Mtavruli';
+	text-align: center;
+	color: #fff;
+	padding: 15px 0;
+	font-weight: normal;
+}
+.container {
+	width: 100%;
+}
+.full-screen-h2 {
+	font-size: 18px;
+	width: 200px;
+}
+.full-screen-h1 {
+	font-size: 30px;
+	width: 200px;
+}
+.main-h1 {
+	font-size: 20px;
+}
+.main-p {
+	font-size: 16px;
+}
+.about-box-1, .about-box-2 {
+	width: 100%;
+	float: none;
+	padding: 0;
+}
+.about-box-img {
+	width: 100%;
+	display: block;
+}
+.about-box-2-h2 {
+	font-size: 18px;
+	margin: 20px auto 10px;
+}
+.about-box-2-h4 {
+	font-size: 16px;
+	padding: 10px 0;
+}
+.about-box-2-p {
+	font-size: 14px;
+	line-height: 20px;
+	text-align: justify;
+}
+.skills-box-1, .skills-box-2 {
+	width: 100%;
+	float: none;
+	padding: 10px 0;
+}
+.contact-boxes {
+	width: 100%;
+	float: none;
+	padding: 0;
+}
+p.contact-p {
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.fa-icons {
+	height: 16px;
+	width: 16px;
+}
+.mail-form {
+	margin: 60px auto 0;
+}
+.textarea-field {
+	max-height: 150px;
+	min-height: 150px;
+	margin-bottom: 5px;
+}
+.submit-field {
+	margin: 0 auto;
+}
+.grid-item {
+	width: 50%;
+	margin-bottom: 25px;
+}
+.polaroid {
+	margin: 0 auto;
+}
+.polaroid-p {
+	font-size: 14px;
+}
+
+}
+
+@media screen and (max-width: 540px) {
+.filter-tabs {
+	font-size: 12px;
+	padding: 10px;
+}
+.grid-item {
+	width: 100%;
+}
+.full-screen-h2 {
+	font-size: 18px;
+	width: 170px;
+}
+.full-screen-h1 {
+	font-size: 25px;
+	width: 170px;
+}
+
+}
